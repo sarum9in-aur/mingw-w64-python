@@ -20,7 +20,7 @@ depends=('mingw-w64-crt'
          'mingw-w64-readline'
          'mingw-w64-zlib'
          'mingw-w64-xz')
-makedepends=('mingw-w64-configure')
+makedepends=('mingw-w64-configure' "python>=${pkgver}")
 options=('staticlibs' '!buildflags' '!strip')
 source=("http://www.python.org/ftp/python/${pkgver}/Python-${pkgver}.tar.xz"
         'patches.tar.gz')
