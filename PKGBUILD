@@ -1,4 +1,5 @@
-# Maintainer: xantares <xantares09 at hotmail dot com>
+# Maintainer: Aleksey Filippov <sarum9in@gmail.com>
+# Contributor: xantares <xantares09 at hotmail dot com>
 # Contributor: Ray Donnelly <mingw.android@gmail.com>
 # Contributor: Dr-Shadow <kerdiles.robin@gmail.com>
 
@@ -12,13 +13,13 @@ license=('PSF')
 url="http://www.python.org/"
 depends=('mingw-w64-crt'
          'mingw-w64-expat'
-	 'mingw-w64-bzip2'
-	 'mingw-w64-gdbm'
-	 'mingw-w64-libffi'
-	 'mingw-w64-openssl'
-	 'mingw-w64-readline'
-	 'mingw-w64-zlib'
-	 'mingw-w64-xz')
+         'mingw-w64-bzip2'
+         'mingw-w64-gdbm'
+         'mingw-w64-libffi'
+         'mingw-w64-openssl'
+         'mingw-w64-readline'
+         'mingw-w64-zlib'
+         'mingw-w64-xz')
 makedepends=('mingw-w64-configure')
 options=('staticlibs' '!buildflags' '!strip')
 source=("http://www.python.org/ftp/python/${pkgver}/Python-${pkgver}.tar.xz"
@@ -67,7 +68,7 @@ build() {
       --with-computed-gotos \
       --with-system-expat \
       --with-dbmliborder=gdbm:ndbm \
-      --with-system-ffi    
+      --with-system-ffi
     make
     popd
   done
